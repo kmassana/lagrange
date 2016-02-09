@@ -266,12 +266,16 @@ void RateModel::setup_Q(){
 							rate = E[p][dest];
 						}
 						Q[p][i][j] = rate;
+						//if(j==0) { //BCO modification
+						//	Q[p][i][j] = 0.0;
+						//}
 					}
 				}
 			}
 		}
 		set_Qdiag(p);
 	}
+	
 	/*
 	 * sparse needs to be transposed for matrix exponential calculation
 	 */

@@ -1,1 +1,3 @@
 this is the git version of the http://code.google.com/p/lagrange c++ version
+
+modified slightly to incorporate the DEC* model of Massana et al.
